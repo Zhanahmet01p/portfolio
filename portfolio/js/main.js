@@ -5,6 +5,9 @@ $(document).ready(function(){
             top = $(clas).offset().top;
         $('body, html').animate({scrollTop: top}, 1500);
     });
+    $('.header__burger').click(function(event){
+        $('.header__burger, .nav__list').toggleClass('active');
+    });
     const Texts = [
             'HTML', 'CSS', 'JAVASCRIPT',
             'Github', 'MONGOOSE', 'REACT',
