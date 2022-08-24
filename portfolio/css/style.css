@@ -5,8 +5,8 @@
   --color1: #52057b;
   --color2: #892cdc;
   --color3: #bc6ff1;
-  --light: #f9f9c5;
   --dark: #000014;
+  --text-color: #fff;
 }
 
 * {
@@ -19,8 +19,13 @@ i {
   padding-right: 8px;
 }
 
+body.sun {
+  --dark: #f9f9c5;
+  --text-color: #000;
+}
+
 body {
-  color: #fff;
+  color: var(--text-color);
   line-height: 1.5;
   font-size: 16px;
   background: var(--dark);
@@ -67,31 +72,25 @@ body {
 }
 
 .hello {
-  font-size: 28px;
+  font-size: 40px;
   margin: 15px 0;
 }
 
 .name {
   font-family: "Oleo Script Swash Caps", cursive;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   color: var(--color3);
+  margin-left: 6px;
 }
 
 .my-profession {
-  font-size: 30px;
-  margin: 15px 0;
+  font-size: 48px;
+  margin: 15px 0 80px;
 }
 
 .typing {
   color: var(--color3);
-}
-
-.header__info p {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 70px;
-  color: #999;
 }
 
 .tagcloud {
@@ -242,7 +241,6 @@ body {
   font-size: 24px;
   margin-bottom: 15px;
   font-weight: 700;
-  color: #fff;
 }
 
 .about__text h3 span {
@@ -329,8 +327,8 @@ body {
   stroke-dasharray: 440;
   stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
   opacity: 0;
-  animation: fadein 1s linear forwards;
-  animation-delay: 2.5s;
+  animation: fadein 6s linear forwards;
+  animation-delay: 7.5s;
 }
 
 @keyframes fadein {
@@ -346,7 +344,7 @@ body {
   position: absolute;
   inset: 5px;
   z-index: 10;
-  animation: animatedot 3s linear forwards;
+  animation: animatedot 8s linear forwards;
 }
 
 @keyframes animatedot {
@@ -379,15 +377,15 @@ body {
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  animation: fadein 1s linear forwards;
-  animation-delay: 2.5s;
+  animation: fadein 6s linear forwards;
+  animation-delay: 7.5s;
 }
 
 .number h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--color2);
   font-weight: 700;
   font-size: 32px;
   margin: 0;
@@ -530,13 +528,14 @@ body {
 }
 
 .service-item__inner:hover .fa {
-  color: #fff;
+  color: rgb(255, 94, 252);
 }
 
 .service-item__inner h4 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
+  color: #fff;
 }
 
 .service-item__inner p {
@@ -548,9 +547,9 @@ body {
 .portfolio__row {
   margin-top: 70px;
   display: grid;
-  column-gap: 30px;
+  column-gap: 10px;
   row-gap: 70px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
@@ -558,9 +557,10 @@ body {
   grid-auto-flow: row;
   grid-template: 210px 1fr minmax(50px, auto) / 1fr;
   border-radius: 20px;
-  border: 6px solid var(--color3);
   overflow: hidden;
   cursor: pointer;
+  position: relative;
+  transition: all 0.5s linear 0s;
 }
 
 .portfolio__item img {
@@ -569,6 +569,29 @@ body {
   display: block;
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.5s linear 0s;
+}
+
+.portfolio__item a {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  z-index: 50;
+  background: var(--color2);
+  padding: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 0.5s linear 0s;
+}
+
+.portfolio__item:hover img {
+  opacity: 0.5;
+}
+
+.portfolio__item:hover a {
+  opacity: 1;
 }
 
 .contact__title {
@@ -625,6 +648,13 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #999;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  align-items: center;
 }
 
 .form {
@@ -770,7 +800,7 @@ body {
 }
 
 .wave__btn-waves::before {
-  background-color: #000;
+  background-color: var(--dark);
   border-radius: 48%;
   animation: waves 5s infinite linear;
 }
@@ -800,9 +830,106 @@ body {
   border-top: 2px solid var(--color1);
 }
 
+.footer__inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .footer__text {
   text-align: center;
   color: var(--color3);
+}
+
+.social__link {
+  position: relative;
+  transform: skewY(-15deg);
+}
+
+.social__link li {
+  position: relative;
+  list-style: none;
+  width: 120px;
+  background: var(--dark);
+  padding: 15px;
+  transition: 0.5s;
+  z-index: calc(1 * var(--i));
+}
+
+.social__link li:hover {
+  transform: translateX(-50px);
+  background: var(--clr);
+}
+
+.social__link li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background: #3e3f36;
+  filter: brightness(0.7);
+  transform-origin: right;
+  transform: skewY(45deg);
+}
+
+.social__link li:hover::before {
+  background: var(--clr);
+  filter: brightness(0.7);
+}
+
+.social__link li:after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #3e3f36;
+  filter: brightness(0.9);
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+.social__link li:hover::after {
+  background: var(--clr);
+  filter: brightness(0.9);
+}
+
+.social__link li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.social__link li:last-child::after {
+  box-shadow: -120px 120px 120px rgba(0, 0, 0, 0.2);
+}
+
+.social__link li span {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  filter: brightness(0.7);
+  transform-origin: right;
+  transform: skewY(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0.5s;
+  font-size: 17px;
+}
+
+.social__link li:hover span {
+  opacity: 1;
 }
 
 @media screen and (max-width: 992px) {
@@ -841,7 +968,7 @@ body {
   .header__burger {
     width: 30px;
     height: 20px;
-    position: relative;
+    position: fixed;
     z-index: 5000;
     display: block;
     margin: 12px;
@@ -931,5 +1058,14 @@ body {
 @media screen and (max-width: 576px) {
   .container {
     width: 540px;
+  }
+  .header__info {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-height: 876px) {
+  .header__info {
+    margin-bottom: 50px;
   }
 }

@@ -14,6 +14,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -22,13 +24,16 @@
             <nav class="navigation">
                 <div class="container">
                     <ul class="nav__list padd-15">
-                        <li class="nav__link"><a href="#about">About</a></li>
-                        <li class="nav__link"><a href="#services">Services</a></li>
                         <div class="logo">
                             <a href="index.html"><img src="img/logo.svg" alt=""></a>
                         </div>
+                        <li class="nav__link"><a href="#about">About</a></li>
+                        <li class="nav__link"><a href="#services">Services</a></li>
                         <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
                         <li class="nav__link"><a href="#contact">Contact</a></li>
+                        <div class="day-night s-icon">
+                            <i class="fas "></i>
+                        </div>
                     </ul>
                 </div>
             </nav>
@@ -37,17 +42,11 @@
             </div>
             <div class="container">
                 <div class="header__row">
-                    <div class="header__info padd-15">
+                    <div class="header__info padd-15 animate__animated animate__fadeInLeftBig">
                         <h3 class="hello">Hello, my name is <span class="name"> Zhanahmet</span></h3>
                         <h3 class="my-profession">I`m a <span class="typing">web developer</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consectetur quia,
-                            totam fugiat quas perspiciatis ullam facere at quibusdam atque repellat quam aspernatur
-                            minus neque tempore dolorem soluta. Libero, est?</p>
-                        <a href="#contact" class="btn">Contact me</a>
+                        <div class="btn__link"><a href="#contact" class="btn">Contact me</a></div>
                     </div>
-                    <!-- <div class="header__img padd-15">
-                        <img src="img/Без названия.jpg" alt="">
-                    </div> -->
                     <div class="sphere"></div>
                 </div>
             </div>
@@ -58,13 +57,13 @@
                     <div class="about__row">
                         <h2 class="title">About Me</h2>
                         <div class="about__content ">
-                            <div class="about__text">
+                            <div class="about__text animate__animated">
                                 <h3>I`m <span>Kozhahmet Zhanahmet</span> and <span>Web Developer</span></h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio ipsa optio quos
                                     eos delectus. Ut similique optio aspernatur, architecto placeat officia iusto totam
                                     explicabo quidem modi accusantium a quibusdam.</p>
                             </div>
-                            <div class="about__info padd-15">
+                            <div class="about__info padd-15 animate__animated">
                                 <div class="info__item">
                                     <p>Birthday: <span>8 Dec 2005</span></p>
                                 </div>
@@ -85,15 +84,11 @@
                                 <div class="info__item">
                                     <p>Phone: <span>+7 (775) 184 9908</span></p>
                                 </div>
-                                <div class="info__item">
-                                    <p>Github: <a href="https://github.com/Zhanahmet01p" target="_blank">Zhanahmet</a>
-                                    </p>
-                                </div>
                             </div>
                         </div>
                         <div class="about__skills">
                             <h2 class="title">Skills</h2>
-                            <div class="skill__cards">
+                            <div class="skill__cards animate__animated">
                                 <div class="skill__item">
                                     <div class="percent" style="--num:85">
                                         <div class="skill-dot"></div>
@@ -151,48 +146,48 @@
                         <div class="about__road">
                             <h2 class="title">My Road</h2>
                             <div class="road__box">
-                                <div class="road">
+                                <div class="road animate__animated">
                                     <div class="road__item">
                                         <div class="circle__dot"></div>
                                         <h3 class="road__date">
-                                            <i class="fa fa-calendar"></i>2020-2022
+                                            <i class="fa fa-calendar"></i>2019-2020
                                         </h3>
-                                        <h4 class="road__title">I studied at Morrison academy</h4>
-                                        <p class="road__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Perferendis iste tenetur soluta atque rerum iure unde facilis fuga
-                                            molestiae, officia distinctio ad eligendi dolor praesentium error voluptatum
-                                            at repellat beatae?</p>
+                                        <h4 class="road__title">I wanted to create my own game</h4>
+                                        <p class="road__text">I was interested in games like all children. But I was
+                                            interested in how it is created, and began to study game engines.
+                                            At first I didn't understand. But I realized that this is not mine.</p>
                                     </div>
                                     <div class="road__item">
                                         <div class="circle__dot"></div>
                                         <h3 class="road__date">
-                                            <i class="fa fa-calendar"></i>2020-2022
+                                            <i class="fa fa-calendar"></i>2020-2021
                                         </h3>
-                                        <h4 class="road__title">I studied at Morrison academy</h4>
-                                        <p class="road__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Perferendis iste tenetur soluta atque rerum iure unde facilis fuga
-                                            molestiae, officia distinctio ad eligendi dolor praesentium error voluptatum
-                                            at repellat beatae?</p>
+                                        <h4 class="road__title">I started learning web technologies</h4>
+                                        <p class="road__text">At first I studied Html, but when I came to Css, I did not
+                                            understand how it works. After many practices, I began to
+                                            understand. Then he came to the JavaScript programming language. Before that
+                                            he knew the C++ language. And it was not
+                                            difficult to learn JavaScript.</p>
                                     </div>
                                 </div>
-                                <div class="road">
+                                <div class="road animate__animated">
                                     <div class="road__item">
                                         <div class="circle__dot"></div>
                                         <h3 class="road__date">
-                                            <i class="fa fa-calendar"></i>2020-2022
+                                            <i class="fa fa-calendar"></i>2021-2022
                                         </h3>
                                         <h4 class="road__title">I studied at Morrison academy</h4>
-                                        <p class="road__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Perferendis iste tenetur soluta atque rerum iure unde facilis fuga
-                                            molestiae, officia distinctio ad eligendi dolor praesentium error voluptatum
-                                            at repellat beatae?</p>
+                                        <p class="road__text">I began to study with Morrison Academy. At the beginning
+                                            of the course, I knew some things. But I solidified the
+                                            knowledge about Web Developer. For the first time I got acquainted with the
+                                            React framework.</p>
                                     </div>
                                     <div class="road__item">
                                         <div class="circle__dot"></div>
                                         <h3 class="road__date">
-                                            <i class="fa fa-calendar"></i>2020-2022
+                                            <i class="fa fa-calendar"></i>2022-2022
                                         </h3>
-                                        <h4 class="road__title">I studied at Morrison academy</h4>
+                                        <h4 class="road__title">Internship at Morrison academy</h4>
                                         <p class="road__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                             Perferendis iste tenetur soluta atque rerum iure unde facilis fuga
                                             molestiae, officia distinctio ad eligendi dolor praesentium error voluptatum
@@ -207,16 +202,14 @@
             <section class="services" id="services">
                 <div class="container">
                     <h2 class="title">Services</h2>
-                    <div class="services__row padd-15">
+                    <div class="services__row padd-15 animate__animated">
                         <div class="service__item">
                             <div class="service-item__inner">
                                 <div class="icon">
                                     <i class="fa fa-mobile-alt"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolore! Fugit
-                                    nostrum corrupti ut, nisi a modi optio omnis ducimus blanditiis temporibus
-                                    consequuntur, quidem soluta eveniet animi iusto, exercitationem iste.</p>
+                                <h4>Adaptive Layout</h4>
+                                <p>I can adapt the site to any device</p>
                             </div>
                         </div>
                         <div class="service__item">
@@ -224,10 +217,8 @@
                                 <div class="icon">
                                     <i class="fa fa-laptop-code"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolore! Fugit
-                                    nostrum corrupti ut, nisi a modi optio omnis ducimus blanditiis temporibus
-                                    consequuntur, quidem soluta eveniet animi iusto, exercitationem iste.</p>
+                                <h4>Web Site</h4>
+                                <p>I can make you a website</p>
                             </div>
                         </div>
                         <div class="service__item">
@@ -236,20 +227,16 @@
                                     <i class="fa fa-palette"></i>
                                 </div>
                                 <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolore! Fugit
-                                    nostrum corrupti ut, nisi a modi optio omnis ducimus blanditiis temporibus
-                                    consequuntur, quidem soluta eveniet animi iusto, exercitationem iste.</p>
+                                <p>I can design a website for you</p>
                             </div>
                         </div>
-                        <div class="service__item">
+                        <!-- <div class="service__item">
                             <div class="service-item__inner">
                                 <div class="icon">
                                     <i class="fa fa-code"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolore! Fugit
-                                    nostrum corrupti ut, nisi a modi optio omnis ducimus blanditiis temporibus
-                                    consequuntur, quidem soluta eveniet animi iusto, exercitationem iste.</p>
+                                <h4>Code</h4>
+                                <p>I can make your code clearer</p>
                             </div>
                         </div>
                         <div class="service__item">
@@ -257,10 +244,8 @@
                                 <div class="icon">
                                     <i class="fa fa-search"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolore! Fugit
-                                    nostrum corrupti ut, nisi a modi optio omnis ducimus blanditiis temporibus
-                                    consequuntur, quidem soluta eveniet animi iusto, exercitationem iste.</p>
+                                <h4>Search</h4>
+                                <p></p>
                             </div>
                         </div>
                         <div class="service__item">
@@ -273,25 +258,25 @@
                                     nostrum corrupti ut, nisi a modi optio omnis ducimus blanditiis temporibus
                                     consequuntur, quidem soluta eveniet animi iusto, exercitationem iste.</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
             <section class="portfolio" id="portfolio">
                 <div class="container">
                     <h2 class="title">Portfolio</h2>
-                    <div class="portfolio__row padd-15">
+                    <div class="portfolio__row padd-15 animate__animated">
                         <div class="portfolio__item">
-                            <img src="img/Без названия.jpg" alt="">
+                            <img src="img/Uber-Eats.png" alt="">
+                            <a href="#" class="portfolio__btn">View Project</a>
                         </div>
                         <div class="portfolio__item">
-                            <img src="img/Без названия.jpg" alt="">
+                            <img src="img/webpng.png" alt="">
+                            <a href="#" class="portfolio__btn">View Project</a>
                         </div>
                         <div class="portfolio__item">
-                            <img src="img/Без названия.jpg" alt="">
-                        </div>
-                        <div class="portfolio__item">
-                            <img src="img/Без названия.jpg" alt="">
+                            <img src="img/webpng.png" alt="">
+                            <a href="#" class="portfolio__btn">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -301,7 +286,7 @@
                     <h2 class="title">Contact</h2>
                     <h3 class="contact__title">Have You Any Questions?</h3>
                     <h4 class="contact__subtitle">I`M AT YOUR SERVICES</h4>
-                    <div class="contact__row">
+                    <div class="contact__row animate__animated">
                         <div class="contact__info__item">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h4>Call Us On</h4>
@@ -318,28 +303,45 @@
                             <p>Zhanahmet01</p>
                         </div>
                     </div>
-                    <h3 class="contact__title">Send Me An Email</h3>
-                    <div class="form">
-                        <form action="#" id="form" class="form__body">
-                            <div class="form__item">
-                                <input type="text" id="formName" name="name" class="form__input _req">
-                                <span>Name*</span>
-                                <i></i>
+                    <div class="contact__content">
+                        <div class="sendmail">
+                            <h3 class="contact__title">Send Me An Email</h3>
+                            <div class="form">
+                                <form action="#" id="form" class="form__body">
+                                    <div class="form__item">
+                                        <input type="text" id="formName" name="name" class="form__input _req">
+                                        <span>Name*</span>
+                                        <i></i>
+                                    </div>
+                                    <div class="form__item">
+                                        <input type="text" id="formEmail" name="email" class="form__input _req _email">
+                                        <span>Email*</span>
+                                        <i></i>
+                                    </div>
+                                    <div class="form__item">
+                                        <textarea name="message" id="formMessage" class="form__input form__mes _req"
+                                            placeholder="Message*" cols="" rows=""></textarea>
+                                    </div>
+                                    <button type="submit" class="wave__btn">
+                                        <span class="wave__btn-text">Send</span>
+                                        <span class="wave__btn-waves"></span>
+                                    </button>
+                                </form>
                             </div>
-                            <div class="form__item">
-                                <input type="text" id="formEmail" name="email" class="form__input _req _email">
-                                <span>Email*</span>
-                                <i></i>
-                            </div>
-                            <div class="form__item">
-                                <textarea name="message" id="formMessage" class="form__input form__mes _req"
-                                    placeholder="Message*" cols="" rows=""></textarea>
-                            </div>
-                            <button type="submit" class="wave__btn">
-                                <span class="wave__btn-text">Send</span>
-                                <span class="wave__btn-waves"></span>
-                            </button>
-                        </form>
+                        </div>
+                        <ul class="social__link">
+                            <li style="--i:4; --clr: #c32aa3"><a href="#"><span><i
+                                            class="fa-brands fa-instagram"></i></span>Instagram</a>
+                            </li>
+                            <li style="--i:3; --clr: #25d366"><a href="#"><span><i
+                                            class="fa-brands fa-whatsapp"></i></span>Whatsapp</a>
+                            </li>
+                            <li style="--i:2; --clr: #EE1D52"><a href="#"><span><i
+                                            class="fa-brands fa-tiktok"></i></span>Tiktok</a></li>
+                            <li style="--i:1; --clr: #1da1f2"><a href="#"><span><i
+                                            class="fa-brands fa-telegram"></i></span>Telegram</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -347,12 +349,17 @@
 
         <footer class="footer">
             <div class="container">
-                <h2 class="footer__text">© 2022 Made By Zhanahmet</h2>
+                <div class="footer__inner">
+                    <h2 class="footer__text">© 2022 Made By Zhanahmet</h2>
+                </div>
             </div>
         </footer>
     </div>
 </body>
 <script src="js/form.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -1,0 +1,26 @@
+.day-night {
+  font-size: 20px;
+  background: var(--color3);
+  color: #fff;
+  border: 1px solid var(--color3);
+  border-radius: 50%;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+/* .s-icon {
+  position: fixed;
+  top: 120px;
+  font-size: 20px;
+  background: var(--color3);
+  color: #fff;
+  border: 1px solid var(--color3);
+  border-radius: 50%;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  right: 10px;
+} */
+
+.s-icon i {
+  padding: 15px;
+}
