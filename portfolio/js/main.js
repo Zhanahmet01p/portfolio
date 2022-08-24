@@ -58,7 +58,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+550){
+        if(imagePos < topOfWindow+700){
             $(this).addClass("animate__fadeInLeftBig")
         }
     });
@@ -68,7 +68,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+550){
+        if(imagePos < topOfWindow+700){
             $(this).addClass("animate__fadeInRightBig")
         }
     });
@@ -78,7 +78,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+550){
+        if(imagePos < topOfWindow+700){
             $(this).addClass("animate__fadeInLeftBig")
         }
     });
@@ -88,7 +88,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+550){
+        if(imagePos < topOfWindow+700){
             $(this).addClass("animate__fadeInUpBig")
         }
     });
@@ -98,7 +98,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+550){
+        if(imagePos < topOfWindow+700){
             $(this).addClass("animate__zoomInDown")
         }
     });
@@ -108,7 +108,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+550){
+        if(imagePos < topOfWindow+700){
             $(this).addClass("animate__slideInUp")
         }
     });
@@ -118,7 +118,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+550){
+        if(imagePos < topOfWindow+700){
             $(this).addClass("animate__slideInUp")
         }
     });

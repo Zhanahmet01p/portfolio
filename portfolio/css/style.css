@@ -653,6 +653,7 @@ body {
 .contact__content {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 300px;
   align-items: center;
 }
@@ -665,7 +666,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   gap: 60px;
   position: relative;
 }
