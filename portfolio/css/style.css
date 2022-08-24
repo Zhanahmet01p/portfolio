@@ -653,8 +653,10 @@ body {
 .contact__content {
   display: flex;
   justify-content: space-around;
+  gap: 70px;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .form {
@@ -849,7 +851,7 @@ body {
   position: relative;
   list-style: none;
   width: 120px;
-  background: var(--dark);
+  background: #3e3f36;
   padding: 15px;
   transition: 0.5s;
   z-index: calc(1 * var(--i));
