@@ -1,3 +1,21 @@
+function preloader(){
+    $(() => {
+        setInterval(() => {
+            var p = $('.preloader');
+
+            p.css('opacity', 0);
+
+            setInterval(
+                () =>p.remove(),
+                parseInt(p.css('--duration'))*1000
+            )
+        }, 1000);
+    });
+}
+
+
+setInterval(() => preloader(), 3000);
+
 $(document).ready(function(){
     $('.nav__list, .btn__link').on("click", "a", function(event){
         event.preventDefault();
@@ -6,9 +24,11 @@ $(document).ready(function(){
         $('body, html').animate({scrollTop: top}, 1500);
     });
 
+
     $('.header__burger').click(function(event){
         $('.header__burger, .nav__list').toggleClass('active');
     });
+
     const Texts = [
             'HTML', 'CSS', 'JAVASCRIPT',
             'Github', 'MONGOOSE', 'REACT',
@@ -58,7 +78,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+700){
+        if(imagePos < topOfWindow+670){
             $(this).addClass("animate__fadeInLeftBig")
         }
     });
@@ -68,7 +88,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+700){
+        if(imagePos < topOfWindow+670){
             $(this).addClass("animate__fadeInRightBig")
         }
     });
@@ -78,7 +98,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+700){
+        if(imagePos < topOfWindow+670){
             $(this).addClass("animate__fadeInLeftBig")
         }
     });
@@ -88,7 +108,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+700){
+        if(imagePos < topOfWindow+670){
             $(this).addClass("animate__fadeInUpBig")
         }
     });
@@ -98,7 +118,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+700){
+        if(imagePos < topOfWindow+670){
             $(this).addClass("animate__zoomInDown")
         }
     });
@@ -108,7 +128,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+700){
+        if(imagePos < topOfWindow+670){
             $(this).addClass("animate__slideInUp")
         }
     });
@@ -118,7 +138,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+700){
+        if(imagePos < topOfWindow+670){
             $(this).addClass("animate__slideInUp")
         }
     });
